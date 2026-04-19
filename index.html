@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-
+ <!--dale formato al documento así lo tenés bien indentado-->
 <head>
     <meta charset="uft-8" />
     <title>Mi Curriculum VItae</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
-    </style>
-    <link rel="stylesheet" href="estilos.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+</style>
+<link rel="stylesheet" href="estilos.css"> <!--acá falta algo... -->
 
 </head>
 
@@ -17,10 +17,15 @@
             <a href="">Acerca de mi</a>
             <a href="">Contacto</a>
         </nav>
+        <section  id="Hero">  <!-- guarda con las mayúsculas! -->
+        <img src="img/candela.png" alt="foto de perfil" width="300" height="300"/>
+        <h1>¡Hola soy Candela Vázquez!</h1>
+        <h2>Diseñadora Gráfica y Fotógrafa</h2>
+        </section>   <!-- dentro del header no es semánticamente correcto que hayan sections o articles porque en un encabezado no hay secciones o artículos, esto se reserva al main, si querés agrupar esto de alguna forma usa divs -->
 
         <!--sobre mi-->
 
-                <section class="Hero">
+                <section class="Hero"> <!-- guarda con las mayúsculas, y no repitas nombres de ids en clases! -->
                     <img src="img/candela.png" alt="foto de perfil" width="300" height="300" />
                     <h1>¡Hola soy Candela Vázquez!</h1>
                     <p>Estudiante de Diseño Gráfico con experiencia en Branding, Fotografia y Creación de contenido para
@@ -35,9 +40,9 @@
     <!--mi info-->
 
     <main>
-    <section class="Aptitudes">
+    <section class="Aptitudes"> <!-- guarda con las mayúsculas! -->
         <article>
-            <div>
+            <div> <!--todo el camino y la cantidad de etiquetas que estás utilizando acá es excesiva y no se justifica su existencia, tranquilamente podrías quitar el div y el article porque sin estos la página se vería exactamente igual y tampoco hay una justificación desde css. Te pasa esto en todas las secciones -->
                 <h2>Aptitudes</h2>
                 <ol>
                     <li>Creatividad</li>
@@ -47,26 +52,24 @@
             </div>
         </article>
     </section>
-
-    <section class="Habilidades">
-        <article>
-            <div>
-                <h2>Habilidades</h2>
-                <ol>
-                    <li>Manejo de Programas de Diseño (Illustrator, InDesing) </li>
-                    <li>Edición de imagen (Lightroom / Photoshop)</li>
-                    <li>Grabación y edición de video</li>
-                    <li>Gestion de redes sociales</li>
-                    <li>Branding</li>
-                    <li>Fotografía Profesional</li>       
-                </ol>
-            </div>
-        </article>
-    </section>
+<!-- tenés que ajustar el indentado -->
+        <section> 
+            <article> 
+                <ol> <!--acá hay que repasar el video de las listas pero te doy unas indicaciones: el título de una lista no es parte de una lista y los items de una lista tienen que estar dentro de una lista. Otra cosa, tener una etiqueta que sólo contenga una etiqueta es un error porque se hace más complejo de leer para las personas, lo importante es no causar un choclazo en vano, con esto me refiero al article.Esto se repite en la siguiente sección -->
+                <h3>Aptitudes</h3>
+            </ol>
+            <li>Capacidad de adaptación</li>
+            <li>Creatividad</li>
+            <li>Manejo de Programas de Diseño (Photoshop, Illustrator, InDesing)</li>
+            <li>Branding</li>
+            <li>Fotografía Profesional</li>
+            </article>
+            
+        </section>
 
     <!--mis estudios-->
 
-    <section class="Estudios">
+    <section class="Estudios"> <!-- guarda con las mayúsculas! -->
         <article>
             <ol>
                 <h2>Estudios</h2>
@@ -84,11 +87,10 @@
         </article>
     </section>
 
-    <section class="Contacto">
-        <h2>¿Queres que trabajemos juntos?</h2>
-        <p>candelavazquez@gmail.com</p>
-    </section>
-</main>
+        <section>
+            <h3>Contacto</h3>
+            <p>Correo: candelavazquez@gmail.com</p> <!-- mirate el último video de la cátedra para mejorar este mail -->
+        </section>
 
 
     <footer>

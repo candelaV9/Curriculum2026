@@ -11,8 +11,7 @@
 }
 
 body {
-  font-family:"Rubik", sans-serif;
-  background-image: url(img/olga-thelavart-vS3idIiYxX0-unsplash.jpg);
+  font-family:"Rubik", sans-serif /* no repitas propiedades! esto ya lo declaraste en el selector universal */
 }
 
 /*aplicaciones*/
@@ -26,9 +25,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Chewy', sans-serif;
-  color: rgba(209, 74, 50, 0.76);
-  font-size: 2.5rem;
+  font-family:'Rubik', sans-serif; /* no repitas!!! */
+  color: black;
+  font-size: 2.2rem;
   text-align: center;
   background-color: rgb(221, 215, 210);
 }
